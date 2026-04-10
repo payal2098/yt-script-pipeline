@@ -47,7 +47,9 @@ This skill requires two APIs. Store credentials in your project's `CLAUDE.md` un
 
 ### 1. Install the skill
 
-Copy the `yt-script-pipeline/` folder into your project directory.
+```bash
+claude install-skill https://github.com/payal2098/yt-script-pipeline
+```
 
 ### 2. Add required sections to your project's CLAUDE.md
 
