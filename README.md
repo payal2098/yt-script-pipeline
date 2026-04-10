@@ -6,7 +6,7 @@ An end-to-end YouTube video script production skill for Claude Code. Handles the
 
 This skill runs a 4-phase pipeline for every YouTube video:
 
-1. **Research** — Topic research backed by keyword data (DataForSEO API), competitor analysis (YouTube Data API), content calendar planning, performance analysis, and backlog optimization.
+1. **Research** — Topic research backed by keyword data (DataForSEO API), competitor analysis (YouTube Data API), performance analysis, and backlog optimization.
 2. **Write** — Script writing using 5 proven frameworks (AIDA, PAS, HSO, Listicle, Tutorial), plus titles, thumbnails, descriptions, tags, timestamps, and CTA templates.
 3. **Edit** — 5-checkpoint editorial review scored out of 50 (Hook & Engagement, Brand Voice, Structure & Flow, SEO Optimization, Accuracy & Completeness).
 4. **Fact-Check** — Verifies every claim against product files, domain knowledge, competitor data, and scientific sources. Flags contradictions and over-promises.
@@ -77,7 +77,6 @@ Just ask Claude to write a YouTube script, research a topic, or review existing 
 - "Write a YouTube script about [topic]"
 - "Research video topics for our channel"
 - "Review this script before we publish"
-- "Create a content calendar for next month"
 - "Fact-check this script"
 
 ## Universal Rules (24 total)

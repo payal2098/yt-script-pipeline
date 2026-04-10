@@ -1,6 +1,6 @@
 ---
 name: yt-script-pipeline
-description: End-to-end YouTube video script pipeline — research, write, edit, and fact-check scripts for any brand or channel. Covers video scripts, topic research, keyword analysis, titles, thumbnails, descriptions, tags, editorial review, fact-checking, content calendars, and competitor analysis. Use this skill whenever the user asks about YouTube content creation, video scripting, channel strategy, video SEO, or any aspect of YouTube production workflow. Reads brand config from CLAUDE.md. Requires DataForSEO + YouTube Data API credentials.
+description: End-to-end YouTube video script pipeline — research, write, edit, and fact-check scripts for any brand or channel. Covers video scripts, topic research, keyword analysis, titles, thumbnails, descriptions, tags, editorial review, fact-checking, and competitor analysis. Use this skill whenever the user asks about YouTube content creation, video scripting, channel strategy, video SEO, or any aspect of YouTube production workflow. Reads brand config from CLAUDE.md. Requires DataForSEO + YouTube Data API credentials.
 ---
 
 # YouTube Video Script Pipeline
@@ -39,7 +39,6 @@ Activate when the user asks for:
 - Video descriptions, tags, or timestamps
 - Editorial review or quality check of a script
 - Fact-checking a script or content piece
-- Content calendar planning
 - Competitor channel analysis
 - Community post drafts or pinned comments
 - Any YouTube content creation task
@@ -107,7 +106,7 @@ Every video goes through these 4 phases in sequence.
 
 # PHASE 1: RESEARCH
 
-> **Role:** Topic researcher, keyword analyst, competitor monitor, content calendar planner, performance analyst.
+> **Role:** Topic researcher, keyword analyst, competitor monitor, performance analyst.
 
 ## 1.1 Topic Research
 
@@ -141,22 +140,7 @@ Track competitor YouTube channels listed in CLAUDE.md `## Competitor Landscape`.
 - **Product Angle:** [relevant brand product]
 ```
 
-## 1.3 Content Calendar Planning
-
-Plan weekly uploads based on the frequency and schedule in CLAUDE.md `## Content Strategy`. Align with seasonal trends from the keyword database and the brand's content pillars.
-
-**Calendar Output Format:**
-```
-## Week of [Date]
-
-| Day | Type | Title | Pillar | Target Keyword | Search Vol |
-|-----|------|-------|--------|---------------|------------|
-| [Day] | Long (3-5 min) | ... | ... | ... | ... |
-| [Day] | Long (3-5 min) | ... | ... | ... | ... |
-| [Day] | Short (16-30s) | ... | ... | ... | ... |
-```
-
-## 1.4 Performance Analysis
+## 1.3 Performance Analysis
 
 Use the YouTube Data API v3 with the channel ID from CLAUDE.md. Pull: views, likes, comments, watch time, CTR, retention data. Compare against channel benchmarks from CLAUDE.md `## YouTube Channel Analysis`. Identify what topics/formats/lengths perform best. Flag videos with promotion signatures (high views, near-zero engagement).
 
@@ -182,7 +166,7 @@ Use the YouTube Data API v3 with the channel ID from CLAUDE.md. Pull: views, lik
 [3-5 actionable items based on data]
 ```
 
-## 1.5 Backlog Optimization
+## 1.4 Backlog Optimization
 
 Audit existing videos for: missing tags, missing/incomplete descriptions, videos not in any playlist, videos that could be re-optimized (good content, bad titles/thumbnails). Prioritize by: views potential, keyword opportunity, effort required.
 
